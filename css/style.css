@@ -188,3 +188,18 @@ a {
     color: var(--cor-detalhes);
     font-weight: 600;
 }
+
+/* HERO */
+#hero {
+   width: 100%;
+   height: 100vh; /* view Port Height */ 
+   background: url("../img/bg-hero.png");
+   /* Criar img na I.A. */
+   background-size: cover;
+   position: relative;
+}
+
+
+
+
+/* Estrutura Base - Corpo */
