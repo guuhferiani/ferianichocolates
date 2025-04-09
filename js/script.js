@@ -33,18 +33,27 @@
     }
 
     // Ativar Botao Menu no modo Mobile
-    
-    on('click', '.mobile-nav-toggle', function() {
+
+    on('click', '.mobile-nav-toggle', function () {
         select('body').classList.toggle('mobile-nav-active')
         this.classList.toggle('bi-list')
         this.classList.toggle('bi-x')
     })
 
-    
+    // Efeito Digitação
+    const typed = select('.typed')
 
+    if (typed) {
+        let typed_strings = typed.getAttribute('data-typed-items')
+        typed_strings = typed_strings.split(',')
 
-    
-    
+        new Typed('.typed', {
+            strings: typed_strings,
+
+        });
+
+    }
+
 
 
 
