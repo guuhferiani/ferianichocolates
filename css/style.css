@@ -137,6 +137,16 @@ a {
     #header {
         left: -300px;
     }
+    #main {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+
 }
 
 /* Menu do Header */ 
@@ -235,5 +245,12 @@ a {
     border-bottom: 3px solid #149ddd;
 }
 
-
 /* Estrutura Base - Corpo */
+#main {
+    margin-left: 300px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
