@@ -254,3 +254,39 @@ a {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+/* Seções e Titulos */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    /* clara */
+    /* background: var(--section-clara); */
+    background: #9f7667;
+    
+}
+
+.section-bg {
+    /* escura */
+    /* background: var(--section-escura); */
+    background: #57362b;
+    color: var(--texto-claro);
+}
+
+/* Estrutura do Titulo Seção */
+.section-title {
+    padding-bottom: 30px;
+}
+
+/* titulo H2 */
+.section-title h2 {
+    color: var(--texto-escuro);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::after {
+    
+}
+
