@@ -1,3 +1,23 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Estilos Fonts */
+/*
+
+Winky Rough: 
+    font-family: "Winky Rough", sans-serif;
+
+Poetsen One: 
+    font-family: "Poetsen One", sans-serif;
+
+Poppins: 
+    font-family: "Poppins", sans-serif;
+
+*/
+
+
+
+
 /* variavel para as cores  */
 :root {
 
@@ -239,11 +259,36 @@ a {
 }
 
 #hero p span {
-    color: #149ddd;
+    color: #b79b90;
     padding-bottom: 4px;
     letter-spacing: 2px;
-    border-bottom: 3px solid #149ddd;
+    border-bottom: 3px solid #f4c119;
 }
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px)  {
+    #hero h2 {
+        font-size: 90px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    #hero p {
+        font-size: 28px;
+    }
+}
+
+
 
 /* Estrutura Base - Corpo */
 #main {
@@ -279,14 +324,38 @@ section {
 
 /* titulo H2 */
 .section-title h2 {
-    color: var(--texto-escuro);
+    color: #4a2e24;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+    font-family: "Poetsen One", sans-serif;
 }
 
 .section-title h2::after {
-    
+    content: "";
+    position: absolute;
+    background: #4a2e24;
+    width: 50px;
+    height: 3px;
+    display: block;
+    bottom: 0;
+    left: 0;
 }
 
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Sobre */
+.sobre .content h3 {
+    color: #4a2e24;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Winky Rough", sans-serif;
+}
+
+.sobre .content ul {
+    list-style: none;
+    padding: 0;
+}
