@@ -67,13 +67,13 @@
         new Waypoint({   //cria uma instancia
             element: skilsContent,
             offset: '80%',  //janela de visualização
-            handler: function(direction) {
+            handler: function (direction) {
                 let progress = select('.progress .progress-bar', true);
                 progress.forEach((el) => {
                     el.style.width = el.getAttribute('aria-valuenow') + '%'
                 });
             }
-        })  
+        })
     }
 
     // Isotope - Biblioteca para Filtro
@@ -84,8 +84,23 @@
                 itemsSelector: '.portfolio-item'
             });
 
+            // Selecionar todos as Listas (li) do html
             let portfolioFilters = select('#portfolio-filters li', true);
-        } 
+
+            on('click', '#portfolio-filters li', function(e) {
+                e.preventDefault();
+                portfolioFilters.forEach(function(el) {
+                    el.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+
+                portfolioIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+
+
+            }, true);
+        }
     });
 
 
