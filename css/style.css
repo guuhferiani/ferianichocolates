@@ -605,3 +605,157 @@ section {
     line-height: 20px;
     font-size: 18px;
 }
+
+
+
+/* ---------
+# Contato // Forms 
+---------- */
+.contato {
+    padding-bottom: 130px;
+}
+.contato .info {
+    padding: 30px;
+    background: var(--fundo-claro);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(219, 215, 215, 0.495);
+}
+.contato .info i {
+    font-size: 22px;
+    color: var(--texto-claro);
+    background: var(--texto-menu);
+    float: left;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.contato .info h4 {
+    color: var(--texto-menu);
+    padding-left: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contato .info p {
+    color: var(--fundo-menu-lateral);
+    font-size: 16px;
+    padding: 0 0 10px 60px;
+    margin-bottom: 30px;
+}
+.contato .info .fone p:hover {
+    color: red;
+}
+
+/* ------- 
+# Forms 
+---------- */
+.contato .email-form {
+    padding: 30px;
+    background: var(--fundo-claro);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(219, 215, 215, 0.495);
+}
+.contato .email-form .form-group {
+    padding-bottom: 15px;
+}
+.contato .email-form label {
+    color: var(--texto-menu);
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.contato .email-form input,
+.contato .email-form textarea {
+    /* border-radius: 0; */
+    box-shadow: none; /*remover sombra*/
+    font-size: 16px;
+}
+.contato .email-form input {
+    height: 40px;
+}
+.contato .email-form textarea {
+    padding: 10px 15px;
+}
+.contato .email-form button[type=submit] {
+    background: var(--aspas);
+    color: var(--fundo-menu-lateral);
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 24px;
+    /* width: 70px;
+    height: 30px; */
+    /* font-size: 18px; */
+    transition: 0.4s;
+}
+.contato .email-form button[type=submit]:hover {
+    background: var(--fundo-escuro);
+}
+
+/* -----------------
+ # back-to-top // Voltar ao TOPO 
+ ----------------------  */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    background: var(--texto-titulo);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+.back-to-top i {
+    color: var(--texto-menu);
+    font-size: 30px;
+    line-height: 0;
+}
+.back-to-top:hover{
+    background: var(--texto-claro);
+}
+.back-to-top i:hover {
+    color: var(--detalhes-icones);
+}
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ------------
+# Footer 
+----------------- */
+#footer {
+    padding: 30px;
+    background: var(--fundo-menu-lateral);
+    color: var(--aspas);
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+}
+#footer .copyright {
+    text-align: center;
+}
+#footer .creditos {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--aspas);
+}
+#footer .creditos a {
+    color: var(--detalhes-escuro);
+}
+@media (max-width: 1199px) {
+    #footer {
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
+}
